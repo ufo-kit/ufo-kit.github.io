@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="UFO Projects : Overview of ufo-kit projects" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>UFO Projects</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ufo-kit">View on GitHub</a>
+
+          <h1 id="project_title">UFO Projects</h1>
+          <h2 id="project_tagline">Overview of ufo-kit projects</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="ufo-core" class="anchor" href="#ufo-core"><span class="octicon octicon-link"></span></a>ufo-core</h1>
+
+<p>UFO is a multi-threaded, GPU-enabled and distributed data processing <em>framework</em>. It provides base classes, scheduler implementations and run-time management to describe a workflow as a graph of processing nodes. The nodes are implemented as plugins in the <a href="ufo-filters">ufo-filters</a> sister project.</p>
+
+<p>The <a href="ufo-python-tools">ufo-python-tools</a> suite provides functions for better integration within Python-based projects. The <a href="ufo-scripts">ufo-scripts</a> project is a collection of small programs for offline reconstruction of tomographic data using the UFO framework. A wide range of sample programs that test the framework can be found in the <a href="ufo-tests">ufo-tests</a> project.</p>
+
+<ul>
+<li><a href="http://ufo-core.readthedocs.org/en/latest/">User Manual</a></li>
+<li><a href="http://ufo.kit.edu/extra/reference/">API Reference</a></li>
+<li><a href="http://ufo.kit.edu/extra/filters/reference/">Task Reference</a></li>
+<li><a href="https://github.com/ufo-kit/ufo-core">Source Code</a></li>
+</ul><hr><h3>
+<a name="ufo-filters-" class="anchor" href="#ufo-filters-"><span class="octicon octicon-link"></span></a>ufo-filters <a name="ufo-filters"></a>
+</h3>
+
+<p>The repository of ufo-filters contains basic plugins used in combination with the UFO data processing framework.</p>
+
+<ul>
+<li>
+<em>Data sources</em>: TIFF and EDF reader, Metaball generator, libuca camera source</li>
+<li>
+<em>Data filters</em>: Averager, Flat-field correction, Cropping, Complex arithmetics, etc.</li>
+<li>
+<em>Data sinks</em>: TIFF and EDF writer, Pipe connection 
+<br><br>
+</li>
+<li>
+<a href="http://ufo.kit.edu/extra/filters/reference/">Task Reference</a> (description of each plugins property)</li>
+<li><a href="https://github.com/ufo-kit/ufo-filters">Source Code</a></li>
+</ul><hr><h3>
+<a name="ufo-python-tools-" class="anchor" href="#ufo-python-tools-"><span class="octicon octicon-link"></span></a>ufo-python-tools <a name="ufo-python-tools"></a>
+</h3>
+
+<p>The Python tools for UFO, are addons to make interaction with <a href="https://github.com/ufo-kit/ufo-core">UFO</a> easier:</p>
+
+<ul>
+<li>UFO and Numpy buffers can be converted freely between each other. </li>
+<li>It can become a daunting task to create tasks through the plugin manager, set configuration and hook up tasks one by one. The <code>ufo.Factory</code> class wraps the whole process in a concise way.
+<br><br>
+</li>
+<li><a href="https://github.com/ufo-kit/ufo-python-tools">Source Code</a></li>
+</ul><hr><h3>
+<a name="ufo-scripts-" class="anchor" href="#ufo-scripts-"><span class="octicon octicon-link"></span></a>ufo-scripts <a name="ufo-scripts"></a>
+</h3>
+
+<p>This repository contains data processing scripts to be used with the UFO framework. At the moment they are targeted at high-performance reconstruction of tomographic data sets.</p>
+
+<ul>
+<li><a href="https://github.com/ufo-kit/ufo-scripts">Source Code</a></li>
+</ul><hr><h3>
+<a name="ufo-tests-" class="anchor" href="#ufo-tests-"><span class="octicon octicon-link"></span></a>ufo-tests <a name="ufo-tests"></a>
+</h3>
+
+<p>Integration tests for the UFO framework</p>
+
+<ul>
+<li><a href="https://github.com/ufo-kit/ufo-tests">Source Code</a></li>
+</ul><hr><h1>
+<a name="libuca" class="anchor" href="#libuca"><span class="octicon octicon-link"></span></a>libuca</h1>
+
+<p>libuca (short for Unified Camera access) is a GLib-based library to access two-dimensional pixel detectors. It gives the user a general interface to a variety of different cameras and camera types. </p>
+
+<ul>
+<li><a href="http://ufo.kit.edu/extra/libuca/manual/manual.html">User Manual</a></li>
+<li><a href="https://github.com/ufo-kit/libuca">Source Code</a></li>
+</ul><hr><h1>
+<a name="concert" class="anchor" href="#concert"><span class="octicon octicon-link"></span></a>concert</h1>
+
+<p>Concert is a light-weight control system interface to control Tango and native devices. It can be used as a library or from a session and within an integrated <a href="http://ipython.org/">IPython</a> shell.</p>
+
+<ul>
+<li><a href="https://concert.readthedocs.org/en/latest/">Documentation</a></li>
+<li><a href="https://github.com/ufo-kit/concert">Source Code</a></li>
+<li>The github repository <a href="https://github.com/ufo-kit/concert-examples">concert-examples</a> contains a set of sample sessions to show how things could be organized within a Concert session and how processes can be defined.</li>
+</ul><hr><h1>
+<a name="libpco" class="anchor" href="#libpco"><span class="octicon octicon-link"></span></a>libpco</h1>
+
+<p>libpco is a library to access CameraLink-based cameras from German camera manufacturer PCO.</p>
+
+<ul>
+<li><a href="https://github.com/ufo-kit/libpco">Source Code</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
